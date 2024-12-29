@@ -41,7 +41,7 @@
 
       nav ul a {
         text-decoration: none;
-        color:white;
+        color: white;
       }
 
       nav ul a:hover {
@@ -54,32 +54,61 @@
         margin: 0px 30px;
       }
 
-      .f1-section{
-        display:flex;
+      .f1-section {
+        max-width: 90%;
+        margin: auto;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        margin:30px 0px;
+        margin: 140px 0px;
       }
 
-      .f1-section .left{
-        margin:0px 70px;
+      .f1-section .left {
+        margin: 0px 70px;
         font-size: 2.8rem;
       }
 
-      .fullName{
-        color:rgb(75, 75, 210);
+      .fullName {
+        color: rgb(75, 75, 210);
       }
 
-      .f1-section .right{
-        width:30%;
+      .f1-section .right {
+        width: 30%;
       }
 
-      .f1-section .right img{
+      .f1-section .right img {
         width: 80%;
       }
 
-      #element{
-        color:rgb(75, 75, 210);
+      #element {
+        color: rgb(75, 75, 210);
+      }
+      main hr {
+        border: 1px;
+        max-width: 90%;
+        margin: auto;
+        background-color: rgb(31 18 80);
+        height: 0.2rem;
+      }
+      .f2-section {
+        max-width: 80%;
+        margin: 50px auto;
+      }
+
+      .f2-section .exps{
+        display:flex;
+        justify-content: space-between;
+        background-color: white;
+        width:80vw;
+        height:2px;
+        margin:56px 0px;
+        
+      }
+
+      .exps .vertical{
+        width:2px;
+        height:100px;
+        background-color: white;
       }
     </style>
   </head>
@@ -89,34 +118,48 @@
         <div class="left">Appu Kumar's Portfolio</div>
         <div class="right">
           <ul>
-            <li><a href="#">Home</a</li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact Me</a></li>
           </ul>
         </div>
+      </nav>
     </header>
     <main>
       <section class="f1-section">
         <div class="left">
-           <div>Hi, My name is <span class="fullName">Appu Kumar</span> </div>
-            <div>and I am a Software Developer</div>
-            <span id="element"></span>
+          <div>Hi, My name is <span class="fullName">Appu Kumar</span></div>
+          <div>and I am a Software Developer</div>
+          <span id="element"></span>
         </div>
         <div class="right">
-            <img src="bg.png" alt="Image not found">
+          <img src="bg.png" alt="Image not found" />
         </div>
+      </section>
+      <hr />
+      <section class="f2-section">
+       <span>What I have done till now</span>
+       <h1>Work Experience</h1>
+       <div class="exps">
+        <div class="vertical">
+            <img src="">
+        </div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+        <div class="vertical"></div>
+       </div>
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed('#element', {
-          strings: ['Java Developer', 'Web Developer','DSA Solver'],
-          typeSpeed: 40,
-          backSpeed: 30,
-          backDelay: 1000, 
-          loop:true,
-        });
-      </script>
+      var typed = new Typed("#element", {
+        strings: ["Java Developer", "Web Developer", "DSA Solver"],
+        typeSpeed: 40,
+        backSpeed: 30,
+        backDelay: 1000,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
